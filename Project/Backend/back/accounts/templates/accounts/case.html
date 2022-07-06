@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/src/styles/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>{{ case_title }}</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data"></form>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="header__icon">
+                        <img src="/static/src/images/fogstream.svg" alt="">
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__item"><a href="{% url 'index' %}" class="header__link">{{ case_btn_6 }}</a></li>
+                        <li class="header__item"><a href="https://www.fogstream.ru/ru/about-us/" class="header__link">{{ case_btn_7 }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="head">
+                <div class="container">
+                    <div class="head__contant">
+                        <div class="head__block-text  block-text">
+                            <h1 class="head__title"><span>/</span>{{ case_name }}</h1>
+                            <a href="#form" class="head__button button">{{ case_btn_1 }}</a>
+                        </div>
+                        <div class="head__img">
+                            <img src="{{ data.cover.url }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main__body">
+                <nav class="nav">
+                    <div class="nav__body">
+                        <div class="container">
+                            <div class="nav__menu">
+                                <div class="nav__icon-block">
+                                    <div class="nav__icon">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <ul class="nav__list">
+                                    <li class="nav__item-phone">
+                                        <img src="/static/src/images/fogstream.svg" alt="">
+                                    </li>
+                                    <li class="nav__item"><a href="#company" class="nav__link">{{ case_btn_2 }}</a></li>
+                                    <li class="nav__item"><a href="#description" class="nav__link">{{ case_btn_3 }}</a></li>
+                                    <li class="nav__item"><a href="#ment" class="nav__link">{{ case_btn_4 }}</a></li>
+                                    <li class="nav__item"><a href="#form" class="nav__link">{{ case_btn_5 }}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__popup">
+                        <div class="container">
+                            <ul class="popup__list">
+                                <li class="popup__item"><a href="{% url 'index' %}" class="popup__link">{{ case_btn_6 }}</a></li>
+                                <li class="popup__item"><a href="https://www.fogstream.ru/ru/about-us/" class="popup__link">{{ case_btn_7 }}</a></li>
+                                <li class="popup__item"><a href="#company" class="popup__link">{{ case_btn_2 }}</a></li>
+                                <li class="popup__item"><a href="#description" class="popup__link">{{ case_btn_3 }}</a></li>
+                                <li class="popup__item"><a href="#ment" class="popup__link">{{ case_btn_4 }}</a></li>
+                                <li class="popup__item"><a href="#form" class="popup__link">{{ case_btn_5 }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <script src="/static/src/scripts/script.js"></script>
+                <div class="company">
+                    <div class="company__block block">
+                        <div class="container">
+                            <div class="company__content">
+                                <div id="company" class="company__block-text block-text">
+                                    <h2 class="company__title title"><span>/</span>{{ case_btn_2 }}</h2>
+                                    <p class="company__text text">{{ case_comp_title }}</p>
+                                    <p class="company__text text">{{ case_comp_text }}</p>
+                                </div>
+                                <div class="company__img">
+                                    <img src="/static/src/images/case-page/logocompany.png" alt="">
+                                </div>
+                            </div>
+                            <div class="company__back">
+                                <img src="{{ data.cover.url }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="description__block">
+                        <div class="container">
+                            <div class="description__content">
+                                <div id="description" class="description__block-text">
+                                    <h2 class="description__title title"><span>/</span>{{ case_btn_3 }}</h2>
+                                    <p>{{ case_text_1 }}</p>
+                                    <p>{{ case_text_2 }}</p>
+                                    <p>{{ case_text_3 }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ment">
+                    <div class="ment__block block">
+                        <div class="container">
+                            <div class="ment__content">
+                                <div id="ment" class="ment__block-text block-text">
+                                    <h2 class="ment__title title"><span>/</span>{{ case_btn_4 }}</h2>
+                                </div>
+                                <div class="prof__block">
+                                    <div class="ment__prof">
+                                        <div class="ment__img">
+                                            <img src="/static/src/images/case-page/Prof1.jpg" alt="">
+                                        </div>
+                                        <div class="ment__text text">
+                                            <p><span>{{ case_boss_name_1 }}</span></p>
+                                            <p>{{ case_boss_job_1 }}</p>
+                                            <p>{{ case_boss_comp_1 }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="ment__prof">
+                                        <div class="ment__img">
+                                            <img src="/static/src/images/case-page/Prof2.jpg" alt="">
+                                        </div>
+                                        <div class="ment__text text">
+                                            <p><span>{{ case_boss_name_2 }}</span></p>
+                                            <p>{{ case_boss_job_2 }}</p>
+                                            <p>{{ case_boss_comp_2 }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="ment__prof">
+                                        <div class="ment__img">
+                                            <img src="/static/src/images/case-page/Prof3.jpg" alt="">
+                                        </div>
+                                        <div class="ment__text text">
+                                            <p><span>{{ case_boss_name_3 }}</span></p>
+                                            <p>{{ case_boss_job_3 }}</p>
+                                            <p>{{ case_boss_comp_3 }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ment__back">
+                                <img src="{{ data.cover.url }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="container">
+                        <div class="form__block">
+                            <div id="form" class="form__block-text block-text">
+                                <h2 class="form__title title"><span>/</span>{{ case_reg }}</h2>
+                            </div>
+                                <form method="post">
+                                {% csrf_token %}
+                                <ul class="form__list">
+                                <li class="form__item">{{ form.first_name }}</li>
+                                <li class="form__item">{{ form.second_name }}</li>
+                                <li class="form__item">{{ form.email }}</li>
+                                <li class="form__item">{{ form.phonenumber }}</li>
+                                <li class="form__item">{{ form.age }}</li>
+                                <li class="form__item">{{ form.role }}</li>
+                                <li class="form__item">{{ form.corp }}</li>
+                                <li class="form__check">{{ form.flag }} <span>Соглашение пользователя</span></li>
+                                <li class="form__item">{{ form.choice }}</li>
+                                <button class="form__button button">Зарегистрироваться</button>
+                                <span>{{ error }}</span>
+                                </ul>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__contant">
+                    <div class="footer__text">
+                        <div class="footer__far">
+                            <p>{{ case_lastText_1 }}</p>
+                            <p>{{ case_lastText_2 }}</p>
+                        </div>
+                        <div class="footer__contact">
+                            <p>{{ case_lastText_3 }}</p>
+                            <p>{{ case_lastText_4 }}</p>
+                            <p>{{ case_lastText_5 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

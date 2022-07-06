@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/src/styles/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>{{ tittle_mainW }}</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="header__icon">
+                        <img src="/static/src/images/fogstream.svg" alt="">
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__item"><a href="{% url 'index' %}" class="header__link">{{ btn_1 }}</a></li>
+                        <li class="header__item"><a href="https://www.fogstream.ru/ru/about-us/" class="header__link">{{ btn_2 }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="join">
+                <div class="container">
+                    <div class="join__content">
+                        <div class="join__block-text block-text">
+                            <h1 class="join__title title"><span>/</span>{{ tittle_mainW }}<br></h1>
+                            <p class="join__text text">{{ text_mainW }}</p>
+                            <a href="#cases" class="join__button button">{{ btn_mainW }}</a>
+                        </div>
+                        <div class="join__img">
+                            <img src="/static/src/images/Header.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <div class="main__body">
+            <nav class="nav">
+                <div class="nav__body">
+                    <div class="container">
+                        <div class="nav__menu">
+                            <div class="nav__icon-block">
+                                <div class="nav__icon">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <ul class="nav__list">
+                                <li class="nav__item-phone">
+                                    <img src="/static/src/images/fogstream.svg" alt="">
+                                </li>
+                                <li class="nav__item"><a href="#concept" class="nav__link">{{ btn_3 }}</a></li>
+                                <li class="nav__item"><a href="#cases" class="nav__link">{{ btn_4 }}</a></li>
+                                <li class="nav__item"><a href="#dates" class="nav__link">{{ btn_5 }}</a></li>
+                                <li class="nav__item"><a href="#faq" class="nav__link">{{ btn_6 }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__popup">
+                    <div class="container">
+                        <ul class="popup__list">
+                            <li class="popup__item"><a href="/index.html" class="popup__link">{{ btn_1 }}</a></li>
+                            <li class="popup__item"><a href="https://www.fogstream.ru/ru/about-us/" class="popup__link">{{ btn_2 }}</a></li>
+                            <li class="popup__item"><a href="#concept" class="popup__link">{{ btn_3 }}</a></li>
+                            <li class="popup__item"><a href="#cases" class="popup__link">{{ btn_4 }}</a></li>
+                            <li class="popup__item"><a href="#dates" class="popup__link">{{ btn_5 }}</a></li>
+                            <li class="popup__item"><a href="#faq" class="popup__link">{{ btn_6 }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <script src="/static/src/scripts/script.js"></script>
+            <div class="concept">
+                <div class="concept__blocks block">
+                    <div class="concept__block1">
+                        <div class="container">
+                            <div class="block1__contant">
+                                <div id="concept" class="block__block-text block-text">
+                                    <h2 class="block__title title"><span>/</span>{{ first_title }}</h2>
+                                    <p class="block__text text">{{ first_text }}</p>
+                                </div>
+                                <div class="block__img">
+                                    <img src="/static/src/images/concept/con1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="concept__block2">
+                        <div class="container">
+                            <div class="block2__contant">
+                                <div class="block__block-text block-text">
+                                    <h2 class="block__title title"><span>/</span>{{ second_title }}</h2>
+                                    <p class="block__text text">{{ second_text }}</p>
+                                </div>
+                                <div class="block__img">
+                                    <img src="/static/src/images/concept/con2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="concept__block3">
+                        <div class="container">
+                            <div class="block3__contant">
+                                <div class="block__block-text block-text">
+                                    <h2 class="block__title title"><span>/</span>{{ thrid_title }}</h2>
+                                    <p class="block__text text"></p>
+                                </div>
+                                <div class="block3__howto">
+                                    <ul class="block3__list">
+                                        <li class="block3__item">
+                                            <img src="/static/src/images/howto/investigation.png" alt="">
+                                            <p class="text">{{ iqon_1 }}</p>
+                                        </li>
+                                        <li class="block3__item">
+                                            <img src="/static/src/images/howto/registration.png" alt="">
+                                            <p class="text">{{ iqon_2 }}с</p>
+                                        </li>
+                                        <li class="block3__item">
+                                            <img src="/static/src/images/howto/team.png" alt="">
+                                            <p class="text">{{ iqon_3 }}</p>
+                                        </li>
+                                        <li class="block3__item">
+                                            <img src="/static/src/images/howto/maze.png" alt="">
+                                            <p class="text">{{ iqon_4 }}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="block__img">
+                                    <img src="/static/src/images/concept/con3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cases" id="cases">
+                <div class="cases__block">
+                    <div class="cases__contant">
+                        <div class="container">
+                            <div class="cases__block-text block-text">
+                                <div class="cases__title title"><span>/</span>{{ cases_title }}</div>
+                                <div class="cases__text text">{{ cases_text }}</div>
+                            </div>
+                            <div class="cases__img">
+                                <img src="/static/src/images/logs.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__all-cases">
+                        <div class="container">
+                            <ul class="cases__list">
+                                <li class="cases__item">
+                                    <a id="case1" href="{% url 'case_1' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case1.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_1 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cases__item">
+                                    <a id="case2" href="{% url 'case_2' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case2.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_2 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cases__item">
+                                    <a href="{% url 'case_3' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case3.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_3 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cases__item">
+                                    <a href="{% url 'case_4' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case4.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_4 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cases__item">
+                                    <a href="{% url 'case_5' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case5.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_5 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cases__item">
+                                    <a href="{% url 'case_6' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case6.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_6 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cases__item">
+                                    <a href="{% url 'case_7' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case7.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_7 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cases__item">
+                                    <a href="{% url 'case_8' %}" class="case">
+                                        <div class="case__img">
+                                            <img src="/static/src/images/cases/case8.jpg" alt="">
+                                        </div>
+                                        <div class="case__block-text block-text">
+                                            <p class="case__text text">{{ case_8 }}</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dates">
+                <div class="dates__block block">
+                    <div class="container">
+                        <div class="dates__contant">
+                            <div  id="dates" class="dates__block-text block-text">
+                                <h2 class="dates__title title"><span>/</span>{{ date_title }}</h2>
+                                <p class="dates__text text">{{ date_text }}</p>
+                            </div>
+                            <div class="dates__date">
+                                <ul class="dates__list">
+                                    <li class="dates__item">
+                                        <h3 class="item__title">{{ date_first }}</h3>
+                                        <p class="item__text">{{ date_first_text }}</p>
+                                    </li>
+                                    <li class="dates__item">
+                                        <h3 class="item__title">{{ date_second }}</h3>
+                                        <p class="item__text">{{ date_second_text }}</p>
+                                    </li>
+                                    <li class="dates__item">
+                                        <h3 class="item__title">{{ date_thrid }}</h3>
+                                        <p class="item__text">{{ date_thrid_text }}</p>
+                                    </li>
+                                    <li class="dates__item">
+                                        <h3 class="item__title">{{ date_fourth }}</h3>
+                                        <p class="item__text">{{ date_fourth_text }}</p>
+                                    </li>
+                                    <li class="dates__item">
+                                        <h3 class="item__title">{{ date_fifth }}</h3>
+                                        <p class="item__text">{{ date_fifth_text }}</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dates__img">
+                                <img src="/static/src/images/Farcode.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq" id="faq">
+                <div class="faq__block">
+                    <div class="container">
+                        <div class="faq__contant">
+                            <div class="faq__block-text block-text">
+                                <h2 class="faq__title title"><span>/</span>{{ question_title }}</h2>
+                                <p class="faq__text text"></p>
+                            </div>
+                            <div class="faq__grid">
+                                <div class="faq__list">
+                                    <div class="faq__item">
+                                        <h3 class="item__title">{{ question_1 }}</h3>
+                                        <p class="item__text">{{ question_1_text }}</p>
+                                    </div>
+                                    <div class="faq__item">
+                                        <h3 class="item__title">{{ question_2 }}</h3>
+                                        <p class="item__text">{{ question_2_text }}</p>
+                                    </div>
+                                    <div class="faq__item faq__item-big">
+                                        <h3 class="item__title">{{ question_3 }}</h3>
+                                        <p class="item__text">{{ question_3_text }}</p>
+                                    </div>
+                                    <div class="faq__item faq__item-big">
+                                        <h3 class="item__title">{{ question_4 }}</h3>
+                                        <p class="item__text">{{ question_4_text }}</p>
+                                    </div>
+                                    <div class="faq__item">
+                                        <h3 class="item__title">{{ question_5 }}</h3>
+                                        <p class="item__text">{{ question_5_text }}</p>
+                                    </div>
+                                    <div class="faq__item">
+                                        <h3 class="item__title">{{ question_6 }}</h3>
+                                        <p class="item__text">{{ question_6_text }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+            <div class="footer__contant">
+                    <div class="footer__text">
+                        <div class="footer__far">
+                            <p>{{ tittle_mainW }}</p>
+                            <p>{{ last_text_1 }}</p>
+                        </div>
+                        <div class="footer__contact">
+                            <p>{{ last_text_2 }}</p>
+                            <p>{{ last_text_3 }}</p>
+                            <p>{{ last_text_4 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
